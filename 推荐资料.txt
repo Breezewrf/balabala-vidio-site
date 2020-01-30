@@ -1,1 +1,11 @@
+VScode环境搭建：
+https://www.zhihu.com/question/30315894
 
+GUI——tkinter学习教程：
+https://blog.csdn.net/ahilll/article/details/81531587
+
+类似项目参考：
+https://github.com/geeeeeeeek/videoproject
+
+python+django搭建web项目：
+https://blog.csdn.net/xm_csdn/article/details/74419683  
