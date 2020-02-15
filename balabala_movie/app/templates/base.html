@@ -1,0 +1,47 @@
+{%extends "bootstrap/base.html"%}
+
+{%block title %}Balabala Video Site{% endblock %}
+
+
+{%block navbar %}
+
+<img width="1500" src="{{ url_for('static', filename='page1.png') }}">
+<div class="navbar navbar-inverse" role="navigation" >
+    <div class="container">
+        <div class="navbar-header" >
+            <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">BalaBala Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Sign in</a></li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+{% block page_content%} {% endblock%}
+
+</div>
+
+{% endblock%}
+{% block body%}
+{{super()}}
+{% endblock%}
+
+

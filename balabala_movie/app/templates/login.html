@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block  title %} Balabala Video Site {% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="icon" href="{{ url_for('static',filename='website_icon.png') }}"
+      type="image/x-icon"
+>
+{% endblock%}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Hello,{% if name %}
+    {{ name }}
+    {% else %}
+    Please Login in
+    {% endif %}!</h1>
+</div>
+
+{{ wtf.quick_form(form) }}
+{% endblock %}
